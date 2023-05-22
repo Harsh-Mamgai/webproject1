@@ -1,0 +1,171 @@
+<!--left at 19:41-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>harsh gym</title>
+    <link rel="stylesheet" href="css/style.css"><!--as it is inside css folder so foldername/path-->
+    <style>
+        /*css reset*/
+        body{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color:white;/*body tag ke sab text ko white color karde*/
+            margin:0px;
+            padding:0px;
+            background-image: url("img/new.jpg");/*add image to full body of the web page*/
+        }
+        .left{
+            position:absolute;
+            left:50px;
+            top:20px;
+            display:inline-block;
+        
+        }
+        .left img{
+            width:110px;
+            height:96px;
+            /*turns white in black and black in white color*/
+            /*filter:invert(100%);*/
+        }
+        .left div{
+            text-align:center;
+            line-height:30px;/*give line gap between image of dumbell and harsh fitness*/
+        }
+        .mid{
+            display:block;
+            width:50%;
+            margin:35px auto;/*bringing box in centre through 3 steps block,width,margin.*/
+            
+        }
+        .right{
+            position:absolute;
+            right:34px;
+            top:25px;
+            display:inline-block;
+            
+        }
+        .navbar li{/*list-style:none kare bina hi list ke dots gayab ho gaye with display:inline-block;*/
+            display:inline-block;
+            font-size:23px;
+        }
+        .navbar li a{
+            color:white;
+            text-decoration:none;
+            padding:34px 12px;
+        }
+        .navbar li a:hover , .navbar li a:active{
+            text-decoration: underline;
+            color:grey;
+        }
+        .btn{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;/*here because button tag have default font, color for a webpage*/
+            margin:0px 9px;
+            background-color: rgb(163, 140, 121);
+            color:white;/*here because button tag has default color and font for a web page*/
+            padding:4px 14px;
+            border:1px solid black;
+            border-radius: 10px;
+            font-size: 14px;
+            cursor:pointer;
+        }
+        .btn:hover{
+            background-color: rgb(30,31,31);
+        }
+        .container{
+            border:2px solid white;
+            margin:104px 30px;
+            padding:40px;
+            width:27%;
+            border-radius:19px;
+            font-size:12px;
+        }
+        .form-group input{
+            text-align: center;
+            display:block;
+            width:337px;
+            padding:1px;
+            border:2px solid black;
+            margin:9px auto;
+            font-size: 17px; 
+        }
+        .container h1{
+            text-align:center;
+        }
+        .container button{
+            display:block;
+            width:100%;
+            margin:5px auto;
+        }
+        .form-group .stud{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color:white;
+            background-color: rgb(163, 140, 121);
+            border-radius: 10px;
+            border:1px solid black;
+            width:100%;
+            font-size:14px;
+            padding:4px;
+            cursor:pointer;
+        }
+        .form-group .stud:hover{
+            background-color:rgb(30,31,31);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="img/gym.jpg" alt="sorry error">
+            <div>Harsh Fitness</div>
+        </div>
+        <!--mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!--right box for buttons-->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="reset" name="" value="Reset Now" class="stud">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+        
+
+
+    
